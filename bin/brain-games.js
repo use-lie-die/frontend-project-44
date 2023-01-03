@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import writename from '../src/cli.js'
+import writename from '../src/cli.js';
 
 writename();
