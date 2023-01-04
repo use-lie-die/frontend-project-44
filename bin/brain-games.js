@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import writename from '../src/cli.js';
 
-writename();
+import Welcome from '../src/cli.js';
+
+Welcome;

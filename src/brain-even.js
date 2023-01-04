@@ -1,25 +1,13 @@
-import read from 'readline-sync';
-import RandomNumber from './tools/GeneratorRandomNumbers.js';
+import body from './tools/index.js';
+import getNumber from './tools/getNumber.js';
 
-export default () => {
-    console.log('Welcome to the Brain Games!');
-    const name = read.question('May i have your name? ');
-    console.log(`Hello, ${name}!`);
+const isEven = (num) => (num % 2 === 0) ? 'yes' : 'no';
+const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-    console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-    for (let index = 0; index < 3; index += 1) {
-        let number = RandomNumber();
-        
-        console.log(`Question: ${number}`);
-        const answer = read.question('Your answer: ');
-
-        if ((number % 2 === 0 && answer === 'yes') || (number % 2 !== 0 && answer === 'no')) {
-            console.log('Correct!');
-        } else {
-            return console.log(`Let's try again, ${name}!`);
-        }
-    }
-
-    return console.log(`Congratulations, ${name}!`);
+const game = () => {
+    const number = getNumber(101);
+    const answer = isEven(number);
+    return [number, answer];
 };
+
+export default body(task, game);
