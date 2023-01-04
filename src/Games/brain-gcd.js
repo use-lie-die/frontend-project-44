@@ -1,5 +1,5 @@
-import body from './tools/index.js';
-import getNum from './tools/getNumber.js';
+import body from '../tools/index.js';
+import getNum from '../tools/getNumber.js';
 
 const task = 'Find the greatest common divisor of given numbers.';
 const taskQuestion = (num1, num2) => `${num1} ${num2}`;

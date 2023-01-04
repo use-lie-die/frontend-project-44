@@ -1,5 +1,5 @@
-import body from './tools/index.js';
-import getNumber from './tools/getNumber.js';
+import body from '../tools/index.js';
+import getNumber from '../tools/getNumber.js';
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const taskQuestion = (num1) => `${num1}`;

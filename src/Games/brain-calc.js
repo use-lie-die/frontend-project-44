@@ -1,6 +1,6 @@
-import body from './tools/index.js';
-import symbol from './tools/getSymbol.js';
-import getNum from './tools/getNumber.js';
+import body from '../tools/index.js';
+import symbol from '../tools/getSymbol.js';
+import getNum from '../tools/getNumber.js';
 
 const task = 'What is the result of the expression?';
 const calculator = (num1, sym, num2) => {

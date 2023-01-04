@@ -1,5 +1,5 @@
-import body from './tools/index.js';
-import getNum from './tools/getNumber.js';
+import body from '../tools/index.js';
+import getNum from '../tools/getNumber.js';
 
 const task = 'What number is missing in the progression?';
 const game = () => {
