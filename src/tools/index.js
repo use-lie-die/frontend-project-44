@@ -19,7 +19,7 @@ export default (task, game) => {
         }
 
         console.log(`Correct!`);
-    }
+    };
 
     console.log(`Congratulations, ${name}!`);
 };
