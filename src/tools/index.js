@@ -15,8 +15,10 @@ export default (task, game) => {
         const userAnswer = read.question('Your answer: ');
 
         if (userAnswer !== String(answer)) {
-            return console.log(`Let's try again, ${name}!`);
-        }
+            console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.`);
+            console.log(`Let's try again, ${name}!`);
+            return;
+        };
 
         console.log(`Correct!`);
     };
