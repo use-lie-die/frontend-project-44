@@ -3,9 +3,9 @@ import getNum from '../tools/getNumber.js';
 
 const task = 'What number is missing in the progression?';
 const game = () => {
-    let startNumber = 1 + getNum(11); // Да, костыль. '1'
-    const AriFactor = 1 + getNum(6); // И еще один. '1'
-    const maxLength = 5 + getNum(11); // И это тоже. '5'
+    let startNumber = 1 + getNum(11);
+    const AriFactor = 1 + getNum(6);
+    const maxLength = 5 + getNum(11);
     const temp1 = startNumber;
 
     const makeArr = () => {
