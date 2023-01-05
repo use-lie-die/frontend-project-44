@@ -22,7 +22,7 @@ const game = () => {
 
     const taskQuestion = () => {
         result[UnNum] = '..';
-        return result.join(', ');
+        return result.join(' ');
     };
 
     const taskAnswer = () => (temp1 + (AriFactor * UnNum));
