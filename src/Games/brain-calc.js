@@ -1,4 +1,4 @@
-import body from '../tools/index.js';
+import runEngine from '../tools/index.js';
 import getNum from '../tools/getNumber.js';
 
 const task = 'What is the result of the expression?';
@@ -31,4 +31,4 @@ const game = () => {
     return [question, answer];
 };
 
-export default body(task, game);
+export default runEngine(task, game);

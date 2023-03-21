@@ -1,4 +1,4 @@
-import body from '../tools/index.js';
+import runEngine from '../tools/index.js';
 import getNumber from '../tools/getNumber.js';
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -19,4 +19,4 @@ const game = () => {
     return [question, answer];
 };
 
-export default body(task, game);
+export default runEngine(task, game);

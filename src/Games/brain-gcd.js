@@ -1,4 +1,4 @@
-import body from '../tools/index.js';
+import runEngine from '../tools/index.js';
 import getNum from '../tools/getNumber.js';
 
 const task = 'Find the greatest common divisor of given numbers.';
@@ -17,4 +17,4 @@ const game = () => {
     return [question, answer];
 }
 
-export default body(task, game);
+export default runEngine(task, game);

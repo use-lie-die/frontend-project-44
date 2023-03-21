@@ -1,4 +1,4 @@
-import body from '../tools/index.js';
+import runEngine from '../tools/index.js';
 import getNum from '../tools/getNumber.js';
 
 const task = 'What number is missing in the progression?';
@@ -27,4 +27,4 @@ const game = () => {
     return [taskQuestion(), taskAnswer()];
 };
 
-export default body(task, game);
+export default runEngine(task, game);

@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import NumPrime from '../src/Games/brain-numprime.js';
+import numPrime from '../src/Games/brain-numprime.js';
 
-NumPrime;
+numPrime;
