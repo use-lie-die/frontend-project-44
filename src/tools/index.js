@@ -1,15 +1,15 @@
 import read from 'readline-sync';
 
-export default (task, game) => {
-    const Rounds = 3;
+export default (task, makeWelcome) => {
+    const rounds = 3;
 
     console.log('Welcome to the Brain Games!');
     const name = read.question('May I have your name? ');
     console.log(`Hello, ${name}!`);
     console.log(task);
     
-    for (let start = 0; start < Rounds; start += 1) {
-        const [question, answer] = game();
+    for (let start = 0; start < rounds; start += 1) {
+        const [question, answer] = makeWelcome();
 
         console.log(`Question: ${question}?`);
         const userAnswer = read.question('Your answer: ');

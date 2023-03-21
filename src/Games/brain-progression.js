@@ -2,31 +2,28 @@ import body from '../tools/index.js';
 import getNum from '../tools/getNumber.js';
 
 const task = 'What number is missing in the progression?';
-const game = () => {
-    let startNumber = 1 + getNum(11);
-    const AriFactor = 1 + getNum(6);
-    const maxLength = 5 + getNum(11);
-    const temp1 = startNumber;
-
-    const makeArr = () => {
-        const numArr = [];
-        for (let minNum = 0; minNum <= maxLength; minNum += 1) {
-            numArr.push(startNumber);
-            startNumber += AriFactor;
-        };
-        return numArr;
+const makeProgression = (startNumber, ariFactor, maxLength) => {
+    const progression = [];
+    for (let num = 0; num < maxLength; num++) {
+        progression.push(startNumber + num * ariFactor);
     };
+    return progression;
+};
 
-    const result = makeArr();
-    const UnNum = getNum(makeArr().length - 1);
+const game = () => {
+    const startNumber = getNum(1, 10);
+    const ariFactor = getNum(1, 5);
+    const maxLength = getNum(5, 10);
+
+    const result = makeProgression(startNumber, ariFactor, maxLength);
+    const UnNum = getNum(1, makeProgression().length - 1);
 
     const taskQuestion = () => {
         result[UnNum] = '..';
         return result.join(' ');
     };
 
-    const taskAnswer = () => (temp1 + (AriFactor * UnNum));
-
+    const taskAnswer = () => startNumber + (ariFactor * UnNum);
     return [taskQuestion(), taskAnswer()];
 };
 

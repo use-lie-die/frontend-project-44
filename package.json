@@ -1,8 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/use-lie-die/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/use-lie-die/frontend-project-44/actions)",
-  "main": "index.js",
+  "description": "A set of small games that develop thinking",
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js",

@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import Welcome from '../src/Games/cli.js';
+import welcome from '../src/cli.js';
 
-Welcome;
+welcome;
