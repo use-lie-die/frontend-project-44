@@ -31,7 +31,7 @@ npm link
     <li><h3>Brain "Unknown member of an arithmetic progression"<h3>
         <p>It is necessary to calculate which number is "hidden" in the arithmetic progression</p>
         <h4>Starting the game</h4>
-        <pre>brain-progression</pre>
+        <pre>brain-prog</pre>
         <h4>Presents</h4>
         <a href="https://asciinema.org/a/Q3Tio5zWwHdthzIfP2KEg1vTP" target="_blank"><img src="https://asciinema.org/a/Q3Tio5zWwHdthzIfP2KEg1vTP.svg" /></a></li>
     <li><h3>Brain "Parity check"<h3>
