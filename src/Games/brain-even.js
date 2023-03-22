@@ -1,7 +1,8 @@
 import runEngine from '../tools/index.js';
 import getNumber from '../tools/getNumber.js';
 
-const isEven = (num) => (num % 2 === 0) ? true : false;
+const isEven = (num) => num % 2 === 0;
+
 const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const game = () => {

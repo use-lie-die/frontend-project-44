@@ -2,6 +2,7 @@ import runEngine from '../tools/index.js';
 import getNumber from '../tools/getNumber.js';
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const taskAnswer = (num1) => {
     if (num1 <= 1) return false;
     for (let ind = 2; ind < num1; ind += 1) {

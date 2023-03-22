@@ -2,6 +2,7 @@ import runEngine from '../tools/index.js';
 import getNum from '../tools/getNumber.js';
 
 const task = 'What number is missing in the progression?';
+
 const makeProgression = (startNumber, ariFactor, maxLength) => {
     const progression = [];
     for (let num = 0; num < maxLength; num++) {
@@ -15,16 +16,26 @@ const game = () => {
     const ariFactor = getNum(1, 5);
     const maxLength = getNum(5, 10);
 
-    const result = makeProgression(startNumber, ariFactor, maxLength);
-    const UnNum = getNum(1, makeProgression().length - 1);
+    const progression = makeProgression(startNumber, ariFactor, maxLength);
+    const unNum = getNum(0, makeProgression().length);
 
-    const taskQuestion = () => {
-        result[UnNum] = '..';
-        return result.join(' ');
-    };
-
-    const taskAnswer = () => startNumber + (ariFactor * UnNum);
-    return [taskQuestion(), taskAnswer()];
+    const taskAnswer = progression[unNum];
+    progression[unNum] = '..';
+    const taskQuestion = progression.join(' ');
+    
+    return [taskQuestion, taskAnswer];
 };
 
 export default runEngine(task, game);
+
+
+/*
+const taskQuestion = () => {
+    progression[unNum] = '..';
+    return progression.join(' ');
+};
+
+const taskAnswer = () => startNumber + (ariFactor * unNum);
+
+    return [taskQuestion(), taskAnswer()];
+    */
