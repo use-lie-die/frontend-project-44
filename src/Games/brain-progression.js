@@ -5,7 +5,7 @@ const task = 'What number is missing in the progression?';
 
 const makeProgression = (startNumber, ariFactor, maxLength) => {
   const progression = [];
-  for (let num = 0; num < maxLength; num++) {
+  for (let num = 0; num < maxLength; num += 1) {
     progression.push(startNumber + num * ariFactor);
   }
   return progression;
