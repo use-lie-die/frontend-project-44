@@ -27,15 +27,3 @@ const game = () => {
 };
 
 export default runEngine(task, game);
-
-
-/*
-const taskQuestion = () => {
-    progression[unNum] = '..';
-    return progression.join(' ');
-};
-
-const taskAnswer = () => startNumber + (ariFactor * unNum);
-
-    return [taskQuestion(), taskAnswer()];
-    */
